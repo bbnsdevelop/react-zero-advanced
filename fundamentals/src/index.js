@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css'
 import FirstComponent from './components/basic/FirstComponent';
 import ComponentWithParam from './components/basic/ComponentWithParam';
+import FragmentsComponent from './components/basic/FragmentsComponent';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,8 @@ const message =
       student="Jhon" 
       note={5}>        
     </ComponentWithParam>
+
+    <FragmentsComponent></FragmentsComponent>
 
   </div>
 
