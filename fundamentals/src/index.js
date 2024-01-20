@@ -12,7 +12,6 @@ const message =
   <div>
     <h1>Hello world react</h1>
     { tag }
-    <p></p>
     <FirstComponent></FirstComponent>
   </div>
 

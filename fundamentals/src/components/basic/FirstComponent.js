@@ -1,5 +1,18 @@
+import React from 'react';
+
+
 function firstComponent(){
-    return 'First component';
+    const msg = hello();
+    return (
+        <div>
+            <h2>First component</h2>
+            <p>{msg}</p>
+        </div> 
+    )
+}
+
+function hello() {
+    return 'Hello world';
 }
 
 
