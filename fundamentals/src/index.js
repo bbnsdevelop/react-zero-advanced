@@ -2,12 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import './index.css'
+import FirstComponent from './components/basic/FirstComponent'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-// const message = "Hello world react"
+
+const tag = <strong>Welcome</strong>
 const message = 
   <div>
     <h1>Hello world react</h1>
+    { tag }
+    <p></p>
+    <FirstComponent></FirstComponent>
   </div>
+
+
+
+
 root.render(message, root);
