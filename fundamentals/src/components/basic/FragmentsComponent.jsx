@@ -22,7 +22,7 @@ export default function frag(){
 
 
     /*
-     In option 2 you can pass props in the component
+     In  option 2 you can't pass props in the component
     
     return (
         <>
