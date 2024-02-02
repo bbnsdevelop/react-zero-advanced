@@ -15,17 +15,18 @@ export default (_) => (
     <h1>Hello world react</h1>
     
     <div className="Cards">
-      <Card title="example of card">
+      
+      <Card title="example of card" color="#080">
         <Calc min={2} max={50}>
           {" "}
         </Calc>
       </Card>
 
-      <Card title="Fragment">
+      <Card title="Fragment" color="#FA6900">
         <FragmentsComponent></FragmentsComponent>
       </Card>
 
-      <Card title="Components with params">
+      <Card title="Components with params" color="#FDF200">
         <ComponentWithParam
           title="School results"
           student="Pedro"
@@ -39,7 +40,7 @@ export default (_) => (
         ></ComponentWithParam>
       </Card>
 
-      <Card title="Fisrt component">
+      <Card title="Fisrt component" color="#28ABE3">
         <FirstComponent></FirstComponent>
       </Card>
     </div>
