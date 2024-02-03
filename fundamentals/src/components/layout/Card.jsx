@@ -11,7 +11,8 @@ export default (props) => {
 
   }
   const cardTitleStyle = {
-    color: props.textColor || '#ffffff'
+    color: props.textColor || '#ffffff',
+    fontWeight: props.bold || 'bold'
   }
 
   return (
