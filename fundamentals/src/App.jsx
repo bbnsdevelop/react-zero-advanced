@@ -7,6 +7,8 @@ import ComponentWithParam from "./components/basic/ComponentWithParam";
 import FragmentsComponent from "./components/basic/FragmentsComponent";
 import Calc from "./components/basic/CalcNumberRandomBetweenMinAndMax";
 import Card from "./components/layout/Card";
+import Parent from "./components/basic/component-structure/Parent";
+
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
@@ -15,6 +17,10 @@ export default (_) => (
     <h1>Hello world react</h1>
     
     <div className="Cards">
+
+      <Card title="Component structure parent child" color="#9999ff">
+        <Parent names={['Jhon', 'Maria', 'Max', 'Carlos']} familyName="Silva"></Parent>
+      </Card>
       
       <Card title="example of card" color="#080">
         <Calc min={2} max={50}>
@@ -26,7 +32,7 @@ export default (_) => (
         <FragmentsComponent></FragmentsComponent>
       </Card>
 
-      <Card title="Components with params" color="#FDF200">
+      <Card title="Components with params" color="#FDF200" textColor="#000000">
         <ComponentWithParam
           title="School results"
           student="Pedro"
