@@ -8,6 +8,8 @@ import FragmentsComponent from "./components/basic/FragmentsComponent";
 import Calc from "./components/basic/CalcNumberRandomBetweenMinAndMax";
 import Card from "./components/layout/Card";
 import Parent from "./components/basic/component-structure/Parent";
+import ParentByCloneOneElementPropsChildren from './components/basic/component-structure/ParentByPropsChildren'
+import Child from "./components/basic/component-structure/Child";
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -17,8 +19,16 @@ export default (_) => (
     <h1>Hello world react</h1>
     
     <div className="Cards">
+      
+      <Card title="Component parent child by clone element" color="#ff66b3" textColor="#000000">
+        <ParentByCloneOneElementPropsChildren familyName="Almeida">
+          <Child name="Elisabeth" />
+          {/* Error cause just support one child */}
+          {/* <Child name="Jessica" /> */}
+        </ParentByCloneOneElementPropsChildren>
+      </Card>
 
-      <Card title="Component structure parent child" color="#9999ff">
+      <Card title="Component parent child" color="#9999ff">
         <Parent names={['Jhon', 'Maria', 'Max', 'Carlos']} familyName="Silva"></Parent>
       </Card>
       
