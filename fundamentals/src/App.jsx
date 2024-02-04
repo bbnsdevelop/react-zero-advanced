@@ -8,7 +8,8 @@ import FragmentsComponent from "./components/basic/FragmentsComponent";
 import Calc from "./components/basic/CalcNumberRandomBetweenMinAndMax";
 import Card from "./components/layout/Card";
 import Parent from "./components/basic/component-structure/Parent";
-import ParentByCloneOneElementPropsChildren from './components/basic/component-structure/ParentByPropsChildren'
+import ParentByCloneOneElementPropsChildren from './components/basic/component-structure/ParentByCloneOneElementPropsChildren';
+import ParentByCloneMultElementsPropsChildren from './components/basic/component-structure/ParentByCloneMultElementsPropsChildren';
 import Child from "./components/basic/component-structure/Child";
 
 
@@ -19,6 +20,17 @@ export default (_) => (
     <h1>Hello world react</h1>
     
     <div className="Cards">
+
+
+      <Card title="Component parent child by clone multi elements" color="#ccccff" textColor="#000000">
+        <ParentByCloneMultElementsPropsChildren familyName="Pereira">
+          <Child name="Jessica" />
+          <Child name="Elisabeth" />          
+          <Child name="Maicon" />
+          <Child name="Lincon" />
+          <Child name="Marcelo" />
+        </ParentByCloneMultElementsPropsChildren>
+      </Card>
       
       <Card title="Component parent child by clone element" color="#ff66b3" textColor="#000000">
         <ParentByCloneOneElementPropsChildren familyName="Almeida">
