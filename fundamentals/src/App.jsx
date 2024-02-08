@@ -11,7 +11,7 @@ import Parent from "./components/basic/component-structure/Parent";
 import ParentByCloneOneElementPropsChildren from './components/basic/component-structure/ParentByCloneOneElementPropsChildren';
 import ParentByCloneMultElementsPropsChildren from './components/basic/component-structure/ParentByCloneMultElementsPropsChildren';
 import Child from "./components/basic/component-structure/Child";
-
+import ListStudent from "./components/basic/ListStudent";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
@@ -21,6 +21,9 @@ export default (_) => (
     
     <div className="Cards">
 
+      <Card title="List (loop)" color="#b3ffb3" textColor="#000000">
+        <ListStudent></ListStudent>
+      </Card>
 
       <Card title="Component parent child by clone multi elements" color="#ccccff" textColor="#000000">
         <ParentByCloneMultElementsPropsChildren familyName="Pereira">
