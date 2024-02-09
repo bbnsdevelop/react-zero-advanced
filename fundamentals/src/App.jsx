@@ -12,6 +12,7 @@ import ParentByCloneOneElementPropsChildren from './components/basic/component-s
 import ParentByCloneMultElementsPropsChildren from './components/basic/component-structure/ParentByCloneMultElementsPropsChildren';
 import Child from "./components/basic/component-structure/Child";
 import ListStudent from "./components/basic/ListStudent";
+import ProductComponent from "./components/basic/ProductComponent";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
@@ -20,6 +21,10 @@ export default (_) => (
     <h1>Hello world react</h1>
     
     <div className="Cards">
+
+      <Card title="Table" color="#3399ff" textColor="#000000">
+        <ProductComponent></ProductComponent>
+      </Card>
 
       <Card title="List (loop)" color="#b3ffb3" textColor="#000000">
         <ListStudent></ListStudent>
