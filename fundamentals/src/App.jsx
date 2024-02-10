@@ -13,6 +13,7 @@ import ParentByCloneMultElementsPropsChildren from './components/component-struc
 import Child from "./components/component-structure/Child";
 import ListStudent from "./components/loops/ListStudent";
 import ProductComponent from "./components/loops/ProductComponent";
+import EvenOrOdd from "./components/conditional/EvenOrOdd";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
@@ -22,7 +23,14 @@ export default (_) => (
     
     <div className="Cards">
 
-      <Card title="Table" color="#3399ff" textColor="#000000">
+      <Card title="Conditional redirect" color="#264d00" titleBold="bold">
+        <EvenOrOdd number={26}></EvenOrOdd>
+        <EvenOrOdd number={15}></EvenOrOdd>
+        <EvenOrOdd number={8}></EvenOrOdd>
+        <EvenOrOdd number={-1}></EvenOrOdd>
+      </Card>
+
+      <Card title="Table" color="#3399ff" textColor="#000000" titleBold="bold">
         <ProductComponent></ProductComponent>
       </Card>
 
@@ -30,7 +38,7 @@ export default (_) => (
         <ListStudent></ListStudent>
       </Card>
 
-      <Card title="Component parent child by clone multi elements" color="#ccccff" textColor="#000000">
+      <Card title="Component parent child by clone multi elements" color="#ccccff" textColor="#000000" titleBold="bold">
         <ParentByCloneMultElementsPropsChildren familyName="Pereira">
           <Child name="Jessica" />
           <Child name="Elisabeth" />          
@@ -40,7 +48,7 @@ export default (_) => (
         </ParentByCloneMultElementsPropsChildren>
       </Card>
       
-      <Card title="Component parent child by clone element" color="#ff66b3" textColor="#000000">
+      <Card title="Component parent child by clone element" color="#ff66b3" textColor="#000000" titleBold="bold">
         <ParentByCloneOneElementPropsChildren familyName="Almeida">
           <Child name="Elisabeth" />
           {/* Error cause just support one child */}
@@ -48,7 +56,7 @@ export default (_) => (
         </ParentByCloneOneElementPropsChildren>
       </Card>
 
-      <Card title="Component parent child" color="#9999ff">
+      <Card title="Component parent child" color="#9999ff" titleBold="bold">
         <Parent names={['Jhon', 'Maria', 'Max', 'Carlos']} familyName="Silva"></Parent>
       </Card>
       
