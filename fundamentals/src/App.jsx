@@ -7,12 +7,12 @@ import ComponentWithParam from "./components/basic/ComponentWithParam";
 import FragmentsComponent from "./components/basic/FragmentsComponent";
 import Calc from "./components/basic/CalcNumberRandomBetweenMinAndMax";
 import Card from "./components/layout/Card";
-import Parent from "./components/basic/component-structure/Parent";
-import ParentByCloneOneElementPropsChildren from './components/basic/component-structure/ParentByCloneOneElementPropsChildren';
-import ParentByCloneMultElementsPropsChildren from './components/basic/component-structure/ParentByCloneMultElementsPropsChildren';
-import Child from "./components/basic/component-structure/Child";
-import ListStudent from "./components/basic/ListStudent";
-import ProductComponent from "./components/basic/ProductComponent";
+import Parent from "./components/component-structure/Parent";
+import ParentByCloneOneElementPropsChildren from './components/component-structure/ParentByCloneOneElementPropsChildren';
+import ParentByCloneMultElementsPropsChildren from './components/component-structure/ParentByCloneMultElementsPropsChildren';
+import Child from "./components/component-structure/Child";
+import ListStudent from "./components/loops/ListStudent";
+import ProductComponent from "./components/loops/ProductComponent";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
