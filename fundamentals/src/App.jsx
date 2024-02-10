@@ -14,6 +14,7 @@ import Child from "./components/component-structure/Child";
 import ListStudent from "./components/loops/ListStudent";
 import ProductComponent from "./components/loops/ProductComponent";
 import EvenOrOdd from "./components/conditional/EvenOrOdd";
+import UserInfo from "./components/conditional/UserInfo";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
@@ -28,6 +29,9 @@ export default (_) => (
         <EvenOrOdd number={15}></EvenOrOdd>
         <EvenOrOdd number={8}></EvenOrOdd>
         <EvenOrOdd number={-1}></EvenOrOdd>
+        <br/>
+        <UserInfo user={{ name: "Jhon"}} />
+        <UserInfo user={{email : "carlos@gmail.com"}} />
       </Card>
 
       <Card title="Table" color="#3399ff" textColor="#000000" titleBold="bold">
