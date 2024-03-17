@@ -17,7 +17,7 @@ const UserInfo = (props) => {
       */
         <If test={user && user.name}>
           Welcome <strong> {user.name} </strong>
-          <Else test={!user && !user.name}>
+          <Else>
             Welcome <strong> anonymous </strong>
           </Else>
         </If>
