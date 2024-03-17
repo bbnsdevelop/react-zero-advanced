@@ -15,14 +15,20 @@ import ListStudent from "./components/loops/ListStudent";
 import ProductComponent from "./components/loops/ProductComponent";
 import EvenOrOdd from "./components/conditional/EvenOrOdd";
 import UserInfo from "./components/conditional/UserInfo";
+import DirectFather from "./components/communication-direct/DirectFather";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (_) => (
   <div className="App">
     
     <h1>Hello world react</h1>
+
     
     <div className="Cards">
+
+      <Card title="Communication direct" color="#264d00" titleBold="bold">
+        <DirectFather></DirectFather>
+      </Card>
 
       <Card title="Conditional redirect" color="#264d00" titleBold="bold">
         <EvenOrOdd number={26}></EvenOrOdd>
