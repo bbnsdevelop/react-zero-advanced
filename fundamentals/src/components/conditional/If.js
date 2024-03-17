@@ -1,9 +1,19 @@
 import React from "react";
 
-export default props =>{
+const If =  (props) => {
+    const childrenElse = props.children.filter( c =>{
+        return c.type && c.type.name === 'Else';
+    })[0];
+
+    const childrenFilter = props.children.filter(c =>{
+        return c !== childrenElse;
+    });
+
     const canReturn = props.test;
     if(canReturn){
-        return props.children;
+        return childrenFilter
+    }else if(childrenElse){
+        return childrenElse;
     }
     return false;
         
@@ -11,3 +21,6 @@ export default props =>{
 }
 
 export const Else = propos => propos.children;
+
+
+export default If;
