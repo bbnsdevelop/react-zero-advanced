@@ -1,16 +1,27 @@
 import React from "react";
-import ComponentReturnChild from "./ComponentReturnChild";
+import If, { Else } from "./If";
 
 const UserInfo = (props) => {
   const user = props.user || {};
   return (
     <div>
-      <ComponentReturnChild test={user && user.name}>
+      {
+        /*
+      <If test={user && user.name}>
         Welcome <strong> {user.name} </strong>
-      </ComponentReturnChild>
-      <ComponentReturnChild test={!user || !user.name}>
+      </If>
+
+      <If test={!user || !user.name}>
         Welcome <strong> anonymous </strong>
-      </ComponentReturnChild>
+      </If>
+      */
+        <If test={user && user.name}>
+          Welcome <strong> {user.name} </strong>
+          <Else>
+            Welcome <strong> anonymous </strong>
+          </Else>
+        </If>
+      }
     </div>
   );
 };

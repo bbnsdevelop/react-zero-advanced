@@ -1,6 +1,6 @@
 import React from "react";
 
-const ComponentReturnChild = (props) =>{
+export default props =>{
     const canReturn = props.test;
     if(canReturn){
         return props.children;
@@ -10,4 +10,4 @@ const ComponentReturnChild = (props) =>{
 
 }
 
-export default ComponentReturnChild;
+export const Else = propos => propos.children;
